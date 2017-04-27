@@ -1,0 +1,17 @@
+class MyTestClass{
+    public static void main(String[] myArg){
+		System.out.println(new MyFactorialClass().MyFactorialMethod(10));
+	}
+}
+
+class MyFactorialClass {
+	public int MyFactorialMethod(int num){
+			int num_aux ;
+			if (num < 1)
+				num_aux = 1 ;
+			else 
+				num_aux = num * (this.MyFactorialMethod(num-1)) ;
+			return num_aux ;
+    }
+}
+	
